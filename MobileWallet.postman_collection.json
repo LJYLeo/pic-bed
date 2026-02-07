@@ -1,0 +1,1828 @@
+{
+	"info": {
+		"_postman_id": "9af35a1f-d822-4af3-9661-3c5eee71fe5f",
+		"name": "MobileWallet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1351719"
+	},
+	"item": [
+		{
+			"name": "withdraw",
+			"item": [
+				{
+					"name": "alipayplus.mobilewallet.withdraw.calculateTotalAmount",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.withdraw.calculateTotalAmount"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"fundType\":\"WITHDRAW_BY_TOKEN_FOR_INSTANT\",\"originalAmount\":{\"amount\":\"2000.00\",\"currency\":\"ZAR\",\"currencyLabel\":\"R\",\"formattedAmount\":\"2976.00\",\"formattedAmountWithCurrency\":\"R 2976.00\",\"value\":\"297600\"},\"scene\":\"CONSUMER\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.withdraw.calculateTotalAmount",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.withdraw.submit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.withdraw.submit"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"extParams\":{\"payerReference\":\"\",\"verifyCode\":\"1234\"},\"fundAmount\":{\"amount\":\"50.00\",\"currency\":\"ZAR\",\"formattedAmountWithCurrency\":\"R 50.00\"},\"fundType\":\"WITHDRAW_FOR_OTHERS_BY_TOKEN\",\"institutionId\":\"632940\",\"logo\":\"https://m.vodapay.vodacom.co.za/storage/2022/8/8/5ebd8a5a-433d-4e0c-b9ce-a3dec0145dd8.svg\",\"partnerName\":\"Pick n Pay\",\"payerReference\":\"\",\"scene\":\"CONSUMER\",\"tileImage\":\"https://m.vodapay.vodacom.co.za/storage/2022/8/4/72b3b78c-9bf7-4f85-a770-5294d3a81c33.svg\",\"withdrawChannel\":\"Retailers\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.withdraw.submit",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.withdraw.init",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.withdraw.submit"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"scene\":\"CONSUMER\",\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"fundType\":\"WITHDRAW\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.withdraw.init",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.beneficiary.queryWithdrawAccountInfo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.withdraw.submit"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"scene\":\"CONSUMER\",\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"}}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.beneficiary.queryWithdrawAccountInfo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.withdraw.query",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.voucher.queryMerchants"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"fundOrderId\":\"2024060610121482010100166735300292119\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.withdraw.query",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.withdraw.voucher.resetPinCheck",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.withdraw.voucher.resetPinCheck"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"voucherId\":\"2702659562740000000001\",\"fundType\":\"WITHDRAW_BY_TOKEN_FOR_INSTANT\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.withdraw.voucher.resetPinCheck",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.withdraw.voucher.resetPin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.withdraw.voucher.resetPin"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"voucherId\":\"1138942527260000000000\",\"pin\":\"3847\",\"fundType\":\"WITHDRAW_BY_TOKEN_FOR_INSTANT\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.withdraw.voucher.resetPin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "alipayplus.mobilewallet.user.information.electrum.queryAndCreate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.user.information.electrum.queryAndCreate"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"createIfNotExists\":false,\"userId\":\"{{userId}}\",\"institutionId\":\"6329455\",\"partnerName\":\"Standard Bank\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.user.information.electrum.queryAndCreate",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.user.information.transactionRestrictions.query",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.user.information.electrum.queryAndCreate"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"bizScenes\":[\"WITHDRAW\",\"SEND_MONEY\"],\"walletType\":\"CONSUMER\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.user.information.transactionRestrictions.query",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.user.kyc.sov.limit.query",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.user.information.electrum.queryAndCreate"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"bizScenes\":[“WITHDRAW”, \"SEND_MONEY\"],\"walletType\":\"CONSUMER\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.user.kyc.sov.limit.query",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.user.information.query",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.user.information.electrum.queryAndCreate"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"}}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.user.information.query",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.voucher.queryMerchants",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.voucher.queryMerchants"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"type\":\"deposit\",\"categoryList\":[\"Agents\",\"ATMs\",\"Banks\",\"Retailers\"]}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.voucher.queryMerchants",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.user.msisdn.verify",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "A14B49D211642"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.voucher.queryMerchants"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"18.0.1\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"fCUMICOrKbGFJ7ooDvj2QTLFVs6EywxJZYQjgW9kLdrH9KD7kgEAAA==\",\"sourcePlatform\":\"MAIN_APP\"},\"msisdn\":\"27637056040\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.user.msisdn.verify",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "transaction list",
+			"item": [
+				{
+					"name": "alipayplus.mobilewallet.user.transaction.detail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.voucher.queryMerchants"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"bizOrderId\":\"2025010910121482010100166448600261215\",\"walletType\":\"CONSUMER\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.user.transaction.detail",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.user.transaction.list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.voucher.queryMerchants"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"methodScope\":\"ALL\",\"walletType\":\"CONSUMER\",\"envInfo\":{\"osVersion\":\"18.0.1\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"fCUMICOrKbGFJ7ooDvj2QTLFVs6EywxJZYQjgW9kLdrH9KD7kgEAAA==\",\"sourcePlatform\":\"MAIN_APP\"},\"bizType\":['TRANSFER'],\"paymentMethod\":[],\"orderStatus\":['SUCCESS','PROCESSING'],\"subBizOrderType\":[\"TRANSFER_P2P\"],\"orderBy\":\"NEWEST\",\"pageNum\":1}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.user.transaction.list",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.biztransfer.v2.queryRecentTransfers",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"methodScope\":\"ALL\",\"walletType\":\"CONSUMER\",\"envInfo\":{\"osVersion\":\"18.0.1\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"fCUMICOrKbGFJ7ooDvj2QTLFVs6EywxJZYQjgW9kLdrH9KD7kgEAAA==\",\"sourcePlatform\":\"MAIN_APP\"},\"bizType\":['TRANSFER'],\"subBizOrderType\":['TRANSFER_P2P'],\"orderBy\":\"NEWEST\",\"pageNum\":1,\"pageSize\":100}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.biztransfer.v2.queryRecentTransfers",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.pocket.queryList",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.pocket.queryList"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"queryKey\":\"ELECTRUM_CHEQUE_TO_OTHERS\",\"order\":\"AVAILABLE_STATUS\",\"pageNum\":1,\"pageSize\":10,\"voucherStatus\":\"UNREDEEMED\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.pocket.queryList",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "topup",
+			"item": [
+				{
+					"name": "alipayplus.mobilewallet.topup.fund.createOrderLoadSOV",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.withdraw.submit"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"requestId\":\"{{requestId}}\",\"walletType\":\"CONSUMER\",\"topupAmount\":{\"amount\":\"50.00\",\"currency\":\"ZAR\",\"formattedAmountWithCurrency\":\"R 50.00\"},\"feeAmount\":{\"amount\":\"0.00\",\"currency\":\"ZAR\",\"formattedAmountWithCurrency\":\"R 0.00\"},\"totalAmount\":{\"amount\":\"50.00\",\"currency\":\"ZAR\",\"formattedAmountWithCurrency\":\"R 50.00\"},\"reference\":\"topup order\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.topup.fund.createOrderLoadSOV",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pdf",
+			"item": [
+				{
+					"name": "alipayplus.mobilewallet.user.transaction.generatepdf",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.voucher.queryMerchants"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"bizOrderId\":\"2025022010121482010100166706300130017\",\"envInfo\":{\"browserType\":\"Other\",\"osType\":\"iOS\",\"osVersion\":\"17.4\",\"sourcePlatform\":\"MAIN_APP\",\"terminalType\":\"APP\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\"},\"walletType\":\"CONSUMER\",\"bizType\":\"WITHDRAW\",\"subBizOrderType\":\"WITHDRAW\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.user.transaction.generatepdf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "notification",
+			"item": [
+				{
+					"name": "alipayplus.mobilewallet.letter.queryPopup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.voucher.queryMerchants"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"18.0.1\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"fCUMICOrKbGFJ7ooDvj2QTLFVs6EywxJZYQjgW9kLdrH9KD7kgEAAA==\",\"sourcePlatform\":\"MAIN_APP\"},\"statusList\":[\"I\"],\"serviceCodeList\":[\"P2P_TRANSFER_SUCCESS_PAYEE\"],\"pageSize\":5,\"pageNum\":1}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.letter.queryPopup",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "transfer",
+			"item": [
+				{
+					"name": "alipayplus.mobilewallet.biztransfer.submit.plus.pay",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.withdraw.submit"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"extParams\":{\"coverInfo\":\"fdasfadsgasfdfgsaf\"},\"payeeInfo\":{\"loginId\":\"27-665544789\"},\"remarks\":\"Qdfsaf\",\"requestId\":\"96cbf347-c1d3-41e2-8013-95339d100d117\",\"amount\":{\"amount\":\"50.00\",\"currency\":\"ZAR\",\"formattedAmountWithCurrency\":\"R 50.00\"},\"fundType\":\"TRANSFER_GIFT\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.biztransfer.submit.plus.pay",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alipayplus.mobilewallet.biztransfer.init",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "appId",
+								"value": "EA7ADCF211445"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "workspaceId",
+								"value": "{{env}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US"
+							},
+							{
+								"key": "OPERATION-TYPE",
+								"value": "alipayplus.mobilewallet.withdraw.submit"
+							},
+							{
+								"key": "did",
+								"value": "Zhzn2zAzLjYDAJ3/rS77BYZR"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Vodapay-DEV_AWS/2 CFNetwork/1494.0.7 Darwin/23.4.0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ts",
+									"value": "{{current_timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "requestData",
+									"value": "[{\"envInfo\":{\"osVersion\":\"17.4\",\"osType\":\"iOS\",\"terminalType\":\"APP\",\"browserType\":\"Other\",\"tokenId\":\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\",\"sourcePlatform\":\"MAIN_APP\"},\"fundType\":\"TRANSFER_P2P\"}]",
+									"type": "text"
+								},
+								{
+									"key": "operationType",
+									"value": "alipayplus.mobilewallet.biztransfer.init",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://vodapay-mgs.{{env}}.vfs.africa/mgw.htm",
+							"protocol": "http",
+							"host": [
+								"vodapay-mgs",
+								"{{env}}",
+								"vfs",
+								"africa"
+							],
+							"path": [
+								"mgw.htm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"// 创建当前时间对象",
+					"var currentTime = new Date();",
+					"// 获取当前时间的时间戳",
+					"var timestamp = currentTime.getTime();",
+					"// 设置环境变量，以便在请求中使用",
+					"pm.variables.set(\"current_timestamp\", timestamp);",
+					"",
+					"// 生成一个随机UUID",
+					"const uuid = pm.variables.replaceIn('{{$guid}}');",
+					"pm.variables.set(\"requestId\", uuid);",
+					"",
+					"var env_config = pm.environment;",
+					"var env = env_config.get(\"env\");",
+					"var phoneNumber = env_config.get(\"phoneNumber\");",
+					"var password = env_config.get(\"password\");",
+					"var otp = env_config.get(\"otp\");",
+					"var appId = env_config.get(\"appId\");",
+					"var publicKey = env_config.get(\"publicKey_mobile\");",
+					"",
+					"// load forgeJS",
+					"if (!pm.globals.has(\"forgeJS\")) {",
+					"    pm.sendRequest(\"https://raw.githubusercontent.com/loveiset/RSAForPostman/master/forge.js\", function (err, res) {",
+					"        if (err) {",
+					"            console.log(err);",
+					"        } else {",
+					"            pm.globals.set(\"forgeJS\", res.text());",
+					"        }",
+					"    });",
+					"}",
+					"",
+					"executeLogin();",
+					"",
+					"function executeLogin() {",
+					"    // get public key if not exists",
+					"    if (!publicKey) {",
+					"        const getPublicKeyRequest = {",
+					"            url: \"http://vodapay-mgs.\" + env + \".vfs.africa/mgw.htm\",",
+					"            method: \"POST\",",
+					"            header: {",
+					"                \"appId\": appId,",
+					"                \"workspaceId\": env",
+					"            },",
+					"            body: {",
+					"                mode: \"urlencoded\",",
+					"                urlencoded: [",
+					"                    { key: \"operationType\", value: \"alipayplus.mobilewallet.security.get.publickey\" },",
+					"                    { key: \"ts\", value: timestamp },",
+					"                    { key: \"requestData\", value: \"[{\\\"envInfo\\\":{\\\"osVersion\\\":\\\"17.4\\\",\\\"osType\\\":\\\"iOS\\\",\\\"terminalType\\\":\\\"APP\\\",\\\"browserType\\\":\\\"Other\\\",\\\"tokenId\\\":\\\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\\\",\\\"sourcePlatform\\\":\\\"MAIN_APP\\\"},\\\"publicKeyScene\\\": \\\"LOGIN\\\"}]\" },",
+					"                ],",
+					"            }",
+					"        };",
+					"",
+					"        pm.sendRequest(getPublicKeyRequest, function (err, response) {",
+					"            var result = response.json();",
+					"            if (result.resultStatus == 1000) {",
+					"                var pk = result.result.publicKey;",
+					"                publicKey = pk;",
+					"                env_config.set(\"publicKey_mobile\", pk);",
+					"                login();",
+					"            }",
+					"        });",
+					"    } else {",
+					"        login();",
+					"    }",
+					"}",
+					"",
+					"function login() {",
+					"    var session_id = env_config.get(\"sessionId\");",
+					"    // if there isn't session id stored in cookie, login",
+					"    if (!session_id) {",
+					"        doLogin();",
+					"        return;",
+					"    }",
+					"",
+					"    const authRequest = {",
+					"        url: \"http://vodapay-mgs.\" + env + \".vfs.africa/mgw.htm\",",
+					"        method: \"POST\",",
+					"        header: {",
+					"            \"appId\": appId,",
+					"            \"workspaceId\": env",
+					"        },",
+					"        body: {",
+					"            mode: \"urlencoded\",",
+					"            urlencoded: [",
+					"                { key: \"operationType\", value: \"alipayplus.mobilewallet.user.auth\" },",
+					"                { key: \"ts\", value: timestamp },",
+					"                { key: \"requestData\", value: \"[{\\\"envInfo\\\":{\\\"osVersion\\\":\\\"17.4\\\",\\\"osType\\\":\\\"iOS\\\",\\\"terminalType\\\":\\\"APP\\\",\\\"browserType\\\":\\\"Other\\\",\\\"tokenId\\\":\\\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\\\",\\\"sourcePlatform\\\":\\\"MAIN_APP\\\"},\\\"context\\\": {\\\"ALIPAYJSESSIONID\\\":\\\"\" + session_id + \"\\\"}}]\" },",
+					"            ],",
+					"        }",
+					"    };",
+					"",
+					"    pm.sendRequest(authRequest, function (err, response) {",
+					"        var result = response.json();",
+					"        var successLogin = result.resultStatus == 1000 && result.result && result.result.success;",
+					"        if (!successLogin) {",
+					"            doLogin();",
+					"        }",
+					"    })",
+					"}",
+					"",
+					"function doLogin() {",
+					"    var credentials = doRSA(publicKey);",
+					"    const loginRequest = {",
+					"        url: \"http://vodapay-mgs.\" + env + \".vfs.africa/mgw.htm\",",
+					"        method: \"POST\",",
+					"        header: {",
+					"            \"appId\": appId,",
+					"            \"workspaceId\": env",
+					"        },",
+					"        body: {",
+					"            mode: \"urlencoded\",",
+					"            urlencoded: [",
+					"                { key: \"operationType\", value: \"alipayplus.mobilewallet.user.login\" },",
+					"                { key: \"ts\", value: timestamp },",
+					"                { key: \"requestData\", value: \"[{\\\"envInfo\\\":{\\\"osVersion\\\":\\\"17.4\\\",\\\"osType\\\":\\\"iOS\\\",\\\"terminalType\\\":\\\"APP\\\",\\\"browserType\\\":\\\"Other\\\",\\\"tokenId\\\":\\\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\\\",\\\"sourcePlatform\\\":\\\"MAIN_APP\\\"},\\\"credentials\\\":\\\"\" + credentials + \"\\\",\\\"loginId\\\":\\\"\" + phoneNumber + \"\\\",\\\"loginIdType\\\":\\\"MOBILE_NO\\\",\\\"loginType\\\":\\\"NORMAL_LOGIN\\\"}]\" },",
+					"            ],",
+					"        }",
+					"    };",
+					"    pm.sendRequest(loginRequest, function (err, response) {",
+					"        var result = response.json();",
+					"        if (result.resultStatus == 1000) {",
+					"            if (result.result && Array.isArray(result.result.verificationMethods) && result.result.verificationMethods.length > 0) {",
+					"                // 遍历verificationMethods数组",
+					"                result.result.verificationMethods.forEach(function (method) {",
+					"                    // 使用OTP再进行验证一次",
+					"                    if (method == 'OTP_SMS') {",
+					"                        sendOTP(result.result.securityId);",
+					"                    }",
+					"                });",
+					"                return;",
+					"            }",
+					"            storeSessionId(response);",
+					"        }",
+					"        console.log(result);",
+					"    });",
+					"}",
+					"",
+					"function storeSessionId(response) {",
+					"    // get all Set-Cookie",
+					"    let allSetCookies = response.headers.all().filter(h => h.key.toLowerCase() === \"set-cookie\");",
+					"    // get and store sessionId",
+					"    allSetCookies.forEach(h => {",
+					"        let match = h.value.match(/ALIPAYJSESSIONID=([^;]+)/);",
+					"        if (match) {",
+					"            pm.environment.set(\"sessionId\", match[1]);",
+					"        }",
+					"    });",
+					"}",
+					"",
+					"function sendOTP(securityId) {",
+					"    const loginRequest = {",
+					"        url: \"http://vodapay-mgs.\" + env + \".vfs.africa/mgw.htm\",",
+					"        method: \"POST\",",
+					"        header: {",
+					"            \"appId\": appId,",
+					"            \"workspaceId\": env",
+					"        },",
+					"        body: {",
+					"            mode: \"urlencoded\",",
+					"            urlencoded: [",
+					"                { key: \"operationType\", value: \"alipayplus.mobilewallet.user.security.sendOtp\" },",
+					"                { key: \"ts\", value: timestamp },",
+					"                { key: \"requestData\", value: \"[{\\\"envInfo\\\":{\\\"osVersion\\\":\\\"17.4\\\",\\\"osType\\\":\\\"iOS\\\",\\\"terminalType\\\":\\\"APP\\\",\\\"browserType\\\":\\\"Other\\\",\\\"tokenId\\\":\\\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\\\",\\\"sourcePlatform\\\":\\\"MAIN_APP\\\"},\\\"phoneNumber\\\":\\\"\" + phoneNumber + \"\\\",\\\"sendStrategy\\\":\\\"AP_LOGIN\\\",\\\"serviceCode\\\":\\\"AP_LOGIN\\\",\\\"otpType\\\":\\\"SMS_CODE\\\"}]\" },",
+					"            ],",
+					"        }",
+					"    };",
+					"    pm.sendRequest(loginRequest, function (err, response) {",
+					"        var result = response.json();",
+					"        if (result.resultStatus == 1000) {",
+					"            doLoginByOTP(securityId);",
+					"        }",
+					"    });",
+					"}",
+					"",
+					"function doLoginByOTP(securityId) {",
+					"    var credentials = doRSA(publicKey);",
+					"    // 获取当前时间的时间戳",
+					"    var ts = new Date().getTime();",
+					"    const loginRequest = {",
+					"        url: \"http://vodapay-mgs.\" + env + \".vfs.africa/mgw.htm\",",
+					"        method: \"POST\",",
+					"        header: {",
+					"            \"appId\": appId,",
+					"            \"workspaceId\": env",
+					"        },",
+					"        body: {",
+					"            mode: \"urlencoded\",",
+					"            urlencoded: [",
+					"                { key: \"operationType\", value: \"alipayplus.mobilewallet.user.login\" },",
+					"                { key: \"ts\", value: ts },",
+					"                { key: \"requestData\", value: \"[{\\\"envInfo\\\":{\\\"osVersion\\\":\\\"17.4\\\",\\\"osType\\\":\\\"iOS\\\",\\\"terminalType\\\":\\\"APP\\\",\\\"browserType\\\":\\\"Other\\\",\\\"tokenId\\\":\\\"AAMA9XZlMly_kvH1swmZCkebgedMVZd2ZBz28ddI_RCL3CXb5xxm2-cC\\\",\\\"sourcePlatform\\\":\\\"MAIN_APP\\\"},\\\"credentials\\\":\\\"\" + credentials + \"\\\",\\\"loginId\\\":\\\"\" + phoneNumber + \"\\\",\\\"loginIdType\\\":\\\"MOBILE_NO\\\",\\\"loginType\\\":\\\"NORMAL_LOGIN\\\",\\\"verifyMethod\\\":\\\"OTP_SMS\\\",\\\"verifyAnswer\\\":\\\"\" + otp + \"\\\",\\\"securityId\\\":\\\"\" + securityId + \"\\\"}]\" },",
+					"            ],",
+					"        }",
+					"    };",
+					"    pm.sendRequest(loginRequest, function (err, response) {",
+					"        var result = response.json();",
+					"        if (result.resultStatus == 1000) {",
+					"            storeSessionId(response);",
+					"            console.log(result);",
+					"        }",
+					"    });",
+					"}",
+					"",
+					"function doRSA(publicKey) {",
+					"    eval(pm.globals.get(\"forgeJS\"));",
+					"    // 进行RSA加密，并存到变量中",
+					"    filled_public_key = '-----BEGIN PUBLIC KEY-----\\n' + publicKey + '\\n-----END PUBLIC KEY-----';",
+					"    var public_key = forge.pki.publicKeyFromPem(filled_public_key);",
+					"    return forge.util.encode64(public_key.encrypt(password, 'RSAES-PKCS1-V1_5', {",
+					"        md: forge.md.sha1.create(),",
+					"        mgf1: {",
+					"            md: forge.md.sha1.create()",
+					"        }",
+					"    }));",
+					"}"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
